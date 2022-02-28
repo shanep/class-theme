@@ -10,7 +10,7 @@ plugins:
   - jekyll-seo-tag
 
 exclude:
-  - run-jekyll.sh
+  - preview-theme.sh
   - package-theme.sh
   - README.md
   - LICENSE
