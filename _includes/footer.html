@@ -3,7 +3,8 @@
         <ul>
             <li>
                 {% if page.date %} {{page.date | date: "%Y-%m-%d"}}{% else %} {{"now" | date: "%Y-%m-%d" }} {% endif%} | layout: {{page.layout}}</li>
-            <li>{{site.email}}</li>
+            <li>{{site.data.semester-info.email}}</li>
+            <li>theme: {{site.theme}}</li>
             {% if page.tags %}
             <li>tags: 
                 {% for tag in page.tags %}
