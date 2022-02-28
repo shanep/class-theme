@@ -7,11 +7,13 @@ layout: course
 <p>
     All of your Lab work will be submitted through Github Classroom. You are responsible for
     ensuring all your code is properly pushed to Github! Any code not pushed to Github by the
-    deadline will not be accepted under any circumstances.The first step is to create a
-    <a href="https://github.com">GitHub</a> account if you don’t already have one.
+    deadline will not be accepted under any circumstances. If you don't already have a 
+    <a href="https://github.com">GitHub</a> account you will need to create one.
 </p>
 
-<h2 id="accept-the-assignment">Accept the assignment</h2>
+{{content}}
+
+<h2 id="accept-the-assignment">Step 1 - Accept the assignment</h2>
 
 <ul>
     <li><a href="{{site.data.semester-info.labs[page.slug]}}">Get the Starter Code</a></li>
@@ -27,36 +29,43 @@ layout: course
 
 {% include youtube.html param="https://www.youtube.com/embed/U1vCFZmtYUA" %}
 
-<h2 id="clone-the=repository-using-vscode">Clone the repository using VSCode</h2>
+<h2 id="clone-the-repository-using-vscode">Step 2 - Clone the repository using VSCode</h2>
 
 <ul>
     <li>
-        Once you have accepted your assignment you can launch VSCode to clone your repository and start
-        working on your assignment.
-    </li>
-    <li>
-        After the due date for the assignment passes your instructor will grade whatever code you
-        have committed and pushed to your repository. 
+        Once you have accepted your assignment you can launch VSCode to clone the starter code to
+        your local machine.
     </li>
 </ul>
 
+
 {% include youtube.html param="https://www.youtube.com/embed/fiPsHGi3Z_s" %}
 
+<h2 id="complete-the-lab">Step 3 - Complete the lab</h2>
 
-<h2 id="submitting-your-finished-code-to-github">Submitting your finished code to Github</h2>
+<ul>
+    <li>
+        The assignment specifications will be located in the README.md in the starter code.
+    </li>
+    <li>
+        The README.md will have a link to the grading rubric that you can use to verify you have
+        completed all requirements.
+    </li>
+</ul>
 
-After you have completed the assignment you need to add, commit, and push your code to Github so
-it can be graded. Any code that is not pushed by the due date will not be graded and can not be
-submitted late.
+<h2 id="push-your-finished-code-to-github">Step 4 - Push your finished code to Github</h2>
+
+<ul>
+    <li>
+        After you have completed the assignment you need to add, commit, and push your code to Github so
+        it can be graded. Any code that is not pushed by the due date will not be graded and can not be
+        submitted late.
+    </li>
+    <li>
+        After the due date and late submission deadline have passed your instructor will grade
+        whatever code you have committed and pushed to your repository. 
+    </li>
+</ul>
 
 {% include youtube.html param="https://www.youtube.com/embed/ersuzAUtTsY" %}
 
-
-<h2 id="universal-grading-rubric">Universal Grading Rubric</h2>
-
-<p>
-    All labs will be graded according to the <a href="{{site.url}}/docs/grading-rubric.html">
-    universal grading rubric</a>.
-</p>
-
-{{content}}
