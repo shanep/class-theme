@@ -11,6 +11,7 @@ plugins:
 
 exclude:
   - run-jekyll.sh
+  - package-theme.sh
   - README.md
   - LICENSE
 
