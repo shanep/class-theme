@@ -1,0 +1,25 @@
+---
+layout: lab
+---
+
+<h2 id="project-information">Project information</h2>
+
+<p>This is a multistage project consisting of the following lessons:</p>
+
+<ul>
+{% for lesson in page.lessons %}
+<li><a href="{{lesson}}.html">{{lesson}}</a></li>
+{% endfor %}
+</ul>
+
+<p>
+   At each checkpoint your code will be spot checked according to the list below. This is a
+   pass/fail checkpoint, no partial credit will be given. 
+</p>
+
+<ul>
+    <li>Your code <strong>must</strong> compile!</li>
+    <li>You must have completed all tasks up to this point.</li>
+</ul>
+
+{{content}}

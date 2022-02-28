@@ -1,0 +1,33 @@
+<div class="post-nav">
+    {% include header.html%}
+    <ul>
+        {% if page.path  == "index.md"  %}
+        <li class='active'>
+        {% else %}
+        <li>
+        {% endif %}
+            <a href={{site.url}}>Home</a>
+        </li>
+
+        {% if page.path contains "syllabus" %}
+        <li class='active'>
+        {% else %}
+        <li>
+        {% endif %}
+            <a href={{site.url}}/docs/syllabus.html>Syllabus</a>
+        </li>
+    </ul>
+
+    <h2>Lessons</h2>
+        <ul>
+        {% for pg in site.lessons %}
+                {% if pg.path == page.path %}
+                    <li class='active'>
+                    {% else %}
+                    <li>
+                {% endif %}
+                <a href={{pg.url}}> {{ pg.title }}</a>{%if pg.layout == "lab"%} 🧪 {%elsif pg.layout == "project" %} 📡 {% endif%}</li>
+                                 
+        {% endfor %}
+        </ul>
+</div>

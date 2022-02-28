@@ -1,0 +1,22 @@
+<footer class="footer">
+    <div class="contact">
+        <ul>
+            <li>{{ page.date | date: "%Y-%m-%d" }} | layout: {{page.layout}}</li>
+            <li>{{site.email}}</li>
+            <li>tags: 
+                {% for tag in page.tags %}
+                    {{tag}}{% if forloop.last != true %},{% endif %}
+                {% endfor %}
+            </li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <p>
+            This work is licensed under a<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+            Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.
+            Opinions are my own and not the views of my employer.
+        </p>
+    </div>
+
+
+</footer>
