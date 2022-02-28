@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "shanep-class"
-  spec.version       = "0.1.0"
+  spec.version       = "1.0.0"
   spec.authors       = ["shane panter"]
   spec.email         = ["shane@foundationcode.com"]
 
