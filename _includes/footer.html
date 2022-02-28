@@ -1,13 +1,17 @@
 <footer class="footer">
     <div class="contact">
         <ul>
-            <li>{{ page.date | date: "%Y-%m-%d" }} | layout: {{page.layout}}</li>
+            <li>
+                {% if page.date %} {{page.date | date: "%Y-%m-%d"}}{% else %} {{"now" | date: "%Y-%m-%d" }} {% endif%} | layout: {{page.layout}}</li>
             <li>{{site.email}}</li>
+            {% if page.tags %}
             <li>tags: 
                 {% for tag in page.tags %}
                     {{tag}}{% if forloop.last != true %},{% endif %}
                 {% endfor %}
             </li>
+            {% endif %}
+
         </ul>
     </div>
     <div class="copyright">
@@ -17,6 +21,5 @@
             Opinions are my own and not the views of my employer.
         </p>
     </div>
-
 
 </footer>

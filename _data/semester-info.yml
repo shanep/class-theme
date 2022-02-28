@@ -1,0 +1,51 @@
+break: 14
+start-date: 2022-08-21T12:00:00Z
+start-day: wednesday
+semester: Fall 2022
+textbook: https://example.com
+discussion: https://piazza.com/
+github: https://github.com/some-site
+office-hours: https://example.com
+grades: https://example.com
+exams: https://example.com
+example-exams: https://example.com
+learning-objectives: https://example.com
+instructor: John Doe
+email: johndoe@boisestate.edu
+text_logo: //CS123
+catalog: >
+   **CS123 Computer Science Stuff (3-0-3)(F,S)**. Catalog description. **PREREQ: CS121.**
+coursework:
+  Labs (11 @ 50 points each): 550
+  Reading (10 @ 20 points each): 200
+  Midterm Exam: 100
+  Final Project: 100
+  Final Exam: 100
+
+labs:
+   lesson02: /docs/starter-code.html
+   lesson04: /docs/starter-code.html
+   lesson06: /docs/starter-code.html
+   lesson08: /docs/starter-code.html
+   lesson10: /docs/starter-code.html
+   lesson12: /docs/starter-code.html
+   lesson14: /docs/starter-code.html
+   lesson18: /docs/starter-code.html 
+   lesson20: /docs/starter-code.html 
+   lesson22: /docs/starter-code.html
+   lesson24: /docs/starter-code.html
+   lesson26: /docs/starter-code.html
+   lesson28: /docs/starter-code.html
+   lesson30: /docs/starter-code.html
+
+reading:
+  lesson03: Reading Assignment (ch1)
+  lesson05: Reading Assignment (ch2.1-2.4)
+  lesson07: Reading Assignment (ch2.5-2.11)
+  lesson09: Reading Assignment (ch3)
+  lesson11: Reading Assignment (ch4)
+  lesson13: Reading Assignment (ch5)
+  lesson17: Reading Assignment (ch6.1-6.3)
+  lesson19: Reading Assignment (ch6.4-6.6)
+  lesson21: Reading Assignment (ch7.4-7.4)
+  lesson23: Reading Assignment (ch7.5-7.9)

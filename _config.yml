@@ -1,0 +1,27 @@
+title: CS123
+description: Computer Science
+url: "https://somelink.github.io/"
+
+# Build settings
+future: true
+show_drafts: false
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - run-jekyll.sh
+  - README.md
+  - LICENSE
+
+collections:
+  lessons:
+    output: true
+  docs:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "course"
