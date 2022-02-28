@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "shanep-class"
-  spec.version       = "1.0.0"
+  spec.version       = "1.0.1"
   spec.authors       = ["shane panter"]
   spec.email         = ["shane@foundationcode.com"]
 
@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/shanep/shanep-class"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
+  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_docs|_lessons|_layouts|_includes|_sass|LICENSE|README|_config\.yml|404\.html|index\.html|robots\.txt)!i) }
 
   spec.add_runtime_dependency "jekyll", "~> 3.9.0"
 end
