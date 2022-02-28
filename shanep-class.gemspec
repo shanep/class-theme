@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "shanep-class"
-  spec.version       = "1.0.3"
+  spec.version       = "1.0.4"
   spec.authors       = ["shane panter"]
   spec.email         = ["shane@foundationcode.com"]
 
@@ -16,4 +16,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "kramdown-parser-gfm", "1.1.0"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.15.1"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.7.1"
+  spec.add_runtime_dependency "jekyll_version_plugin", "~> 2.0.0"
+
+  
 end

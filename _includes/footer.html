@@ -3,8 +3,10 @@
         <ul>
             <li>
                 {% if page.date %} {{page.date | date: "%Y-%m-%d"}}{% else %} {{"now" | date: "%Y-%m-%d" }} {% endif%} | layout: {{page.layout}}</li>
-            <li>{{site.data.semester-info.email}}</li>
+            <li>contact: {{site.data.semester-info.email}}</li>
+            {% if site.theme %}
             <li>theme: {{site.theme}}</li>
+            {% endif %}           
             {% if page.tags %}
             <li>tags: 
                 {% for tag in page.tags %}
@@ -12,7 +14,7 @@
                 {% endfor %}
             </li>
             {% endif %}
-
+            <li>Build: {% project_version %}</li>
         </ul>
     </div>
     <div class="copyright">

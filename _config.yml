@@ -8,6 +8,7 @@ show_drafts: false
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll_version_plugin
 
 exclude:
   - preview-theme.sh
