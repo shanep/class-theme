@@ -23,7 +23,9 @@
 
   <h2 id="important-links">Important links</h2>
   <ul>
+    {% if tableFile.textbook %}
     <li><a href="{{tableFile.textbook}}">Text Book</a></li>
+    {% endif %}
     <li><a href="{{tableFile.discussion}}">Discussion Forum</a></li>
     <li><a href="{{tableFile.github}}">Github Course Site</a></li>
     <li><a href="{{tableFile.grades}}">Grades</a></li>
