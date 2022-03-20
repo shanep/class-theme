@@ -4,9 +4,7 @@
             <li>
                 {% if page.date %} {{page.date | date: "%Y-%m-%d"}}{% else %} {{"now" | date: "%Y-%m-%d" }} {% endif%} | layout: {{page.layout}}</li>
             <li>contact: {{site.data.semester-info.email}}</li>
-            {% if site.theme %}
-            <li>theme: {{site.theme}}</li>
-            {% endif %}           
+            <li>theme: <a href="https://github.com/shanep/shanep-class">shanep-class</a></li>       
             {% if page.tags %}
             <li>tags: 
                 {% for tag in page.tags %}
