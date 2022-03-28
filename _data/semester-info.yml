@@ -1,4 +1,4 @@
-break: 14
+break: 2
 start-date: 2022-08-21T12:00:00Z
 start-day: wednesday
 semester: Fall 2022
@@ -12,9 +12,22 @@ example-exams: https://example.com
 learning-objectives: https://example.com
 instructor: John Doe
 email: johndoe@boisestate.edu
-text_logo: //CS123
+text-logo: //CS123
 catalog: >
-   **CS123 Computer Science Stuff (3-0-3)(F,S)**. Catalog description. **PREREQ: CS121.**
+   CS123 Computer Science Stuff (3-0-3)(F,S). Catalog description. PREREQ: CS121.
+welcome-message: >
+   Welcome to the class! My name is Shane Panter and I will be your instructor for this course. For
+   many students this will be the first time you have been exposed to Web Development of any kind.
+   This course has been designed to take someone who has never seen these concepts before to being
+   able to produce an interactive website in 16 weeks. This class is a three credit course and it is
+   specifically designed to require 8 to 10 hours of work each week. In order to succeed in the
+   course, it will be critical for you to manage your time effectively and keep up with the reading
+   and lab activities.  Please take some time to get familiar with the course website. Pay close
+   attention when when the homework assignments are due to ensure you get everything in on time.
+   <br><br> We will be interacting with each other primarily through github, discussion forums, and
+   videos. Get started by completing the Course Introduction homework below!
+welcome-video: https://www.youtube.com/embed/dQw4w9WgXcQ
+
 coursework:
   Labs (11 @ 50 points each): 550
   Reading (10 @ 20 points each): 200

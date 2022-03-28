@@ -16,18 +16,6 @@
         {% endif %}
             <a href={{site.url}}/docs/syllabus.html>Syllabus</a>
         </li>
-    </ul>
 
-    <h2>Lessons</h2>
-        <ul>
-        {% for pg in site.lessons %}
-                {% if pg.path == page.path %}
-                    <li class='active'>
-                    {% else %}
-                    <li>
-                {% endif %}
-                <a href={{pg.url}}> {{ pg.title }}</a>{%if pg.layout == "lab"%} 🧪 {%elsif pg.layout == "project" %} 📡 {% endif%}</li>
-                                 
-        {% endfor %}
-        </ul>
+    </ul>
 </div>

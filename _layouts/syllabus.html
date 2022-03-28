@@ -1,23 +1,12 @@
-{% assign tableFileParam = {{include.file}} %}
-{% assign tableFile = site.data[tableFileParam] %}
+---
+layout: course
+---
+
+{% assign tableFile = site.data.semester-info %}
 
 <h2 id="catalog-description">Catalog Description</h2>
 
 {{tableFile.catalog}}
-
-<h2 id="logistics">Logistics</h2>
-
-<ul>
-  <li><strong>Instructor:</strong> {{tableFile.instructor}}</li>
-  <li><strong>Email:</strong> {{tableFile.email}}</li>
-  <li><a href="{{tableFile.textbook}}">Textbook</a></li>
-</ul>
-
-<h2 id="learning-objectives">Learning Objectives</h2>
-
-<ul>
-  <li><a href="{{tableFile.learning-objectives}}">Learning Objective Alignment Sheet</a></li>
-</ul>
 
 <h2 id="coursework">Coursework</h2>
 
@@ -42,7 +31,7 @@
   </tbody>
 </table>
 
-<h2 id="final-grades">Grading</h2>
+<h2 id="final-grades">Grading Policy</h2>
 
 <p>
   Final grades will be assigned with the formula [Earned Points]/[Total Points]. For example if you
