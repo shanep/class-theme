@@ -272,8 +272,12 @@ a.skip-main:focus, a.skip-main:active {
 
 .alert-icon{
     border-left: solid 10px;
-       font-size: var(--s3);
+    font-size: var(--s3);
     padding-right: 20px;
     padding-left: 20px;
     margin: 0;
+ }
+
+ .small-text {
+  font-size: var(--s-1);
  }

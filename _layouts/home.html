@@ -91,7 +91,7 @@ layout: default
                 <tr>
                   {% assign curr_date = curr_date | date: "%s" | plus: two_days %}
                   <td>{{curr_date | date: "%m/%d - %a"}}</td>
-                  <td><a href="{{site.url}}{{page.url}}">{{page_title}}</a>{%if page.layout == "lab"%} 🧪 {%elsif page.layout == "project" %} 📡 {% endif%}</td>
+                  <td><a href="{{site.url}}{{page.url}}">{{page_title}}</a> <span class="small-text">{{page.slug}}</span>{%if page.layout == "lab"%} 🧪 {%elsif page.layout == "project" %} 📡 {% endif%}</td>
                   <td>{{page.points}}</td>
                   {% assign total_points = total_points | plus: page.points %}
                 </tr>
@@ -126,7 +126,7 @@ layout: default
                 {% endif %}
                 {% assign curr_date = curr_date | date: "%s" | plus: two_days %}
                 <td>{{curr_date | date: "%m/%d - %a"}}</td>
-                <td><a href="{{site.url}}{{page.url}}">{{page_title}}</a>{%if page.layout == "lab"%} 🧪 {%elsif page.layout == "project" %} 📡 {% endif%}</td>
+                <td><a href="{{site.url}}{{page.url}}">{{page_title}}</a> <span class="small-text">{{page.slug}}</span>{%if page.layout == "lab"%} 🧪 {%elsif page.layout == "project" %} 📡 {% endif%}</td>
                 <td>{{page.points}}</td>
                 {% assign total_points = total_points | plus: page.points %}
               </tr>
