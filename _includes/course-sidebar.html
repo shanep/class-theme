@@ -1,21 +1,4 @@
 <div class="post-nav">
     {% include header.html%}
-    <ul>
-        {% if page.path  == "index.html"  %}
-        <li class='active'>
-        {% else %}
-        <li>
-        {% endif %}
-            <a href={{site.url}}>Home</a>
-        </li>
-
-        {% if page.path contains "syllabus" %}
-        <li class='active'>
-        {% else %}
-        <li>
-        {% endif %}
-            <a href={{site.url}}/docs/syllabus.html>Syllabus</a>
-        </li>
-
-    </ul>
+    {% include toc.html html=content %}
 </div>

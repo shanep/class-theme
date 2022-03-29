@@ -1,4 +1,0 @@
----
-layout: syllabus
-tag: syllabus
----
