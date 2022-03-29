@@ -3,13 +3,17 @@ layout: default
 ---
 
 
-{% include course-sidebar.html %}
+<div class="post-nav">
+    {% include header.html%}
+</div>
 
 <div id="main-content" class="post-content">
     <article>
         <h1>{{site.data.semester-info.reading[page.slug]}}</h1>
 
-        <h2 id="overview">Overview</h2>
+        {{content}}
+
+        <h2 id="zybooks">zyBooks</h2>
 
         <p>
             For this homework you will need to log into zyBooks with the link below and complete the

@@ -58,6 +58,7 @@ layout: default
             <th>Due Date</th>
             <th>Homework</th>
             <th>Points</th>
+            <th>Lesson</th>
           </tr>
         </thead>
     
@@ -74,7 +75,7 @@ layout: default
               {% if curr_module != page.tag %}
               <!--Module header-->
                 <tr>
-                  <td colspan="4" class="text-center table-darkish">{{page.tag | capitalize }}</td>
+                  <td colspan="5" class="text-center table-darkish">{{page.tag | capitalize }}</td>
                 </tr>
                 {% assign curr_module = page.tag %}
               {% endif%}
@@ -91,9 +92,10 @@ layout: default
                 <tr>
                   {% assign curr_date = curr_date | date: "%s" | plus: two_days %}
                   <td>{{curr_date | date: "%m/%d - %a"}}</td>
-                  <td><a href="{{site.url}}{{page.url}}">{{page_title}} ({{page.slug}})</a>{%if page.layout == "lab"%} 🧪 {%elsif page.layout == "project" %} 📡 {% endif%}</td>
+                  <td><a href="{{site.url}}{{page.url}}">{{page_title}}</a>{%if page.layout == "lab"%} 🧪 {%elsif page.layout == "project" %} 📡 {% endif%}</td>
                   <td>{{page.points}}</td>
                   {% assign total_points = total_points | plus: page.points %}
+                  <td>{{page.slug}}</td>
                 </tr>
                 <tr>
                   <td rowspan= 2 class="table-lightish text-center border">
@@ -126,9 +128,10 @@ layout: default
                 {% endif %}
                 {% assign curr_date = curr_date | date: "%s" | plus: two_days %}
                 <td>{{curr_date | date: "%m/%d - %a"}}</td>
-                <td><a href="{{site.url}}{{page.url}}">{{page_title}} ({{page.slug}})</a>{%if page.layout == "lab"%} 🧪 {%elsif page.layout == "project" %} 📡 {% endif%}</td>
+                <td><a href="{{site.url}}{{page.url}}">{{page_title}}</a>{%if page.layout == "lab"%} 🧪 {%elsif page.layout == "project" %} 📡 {% endif%}</td>
                 <td>{{page.points}}</td>
                 {% assign total_points = total_points | plus: page.points %}
+                <td>{{page.slug}}</td>
               </tr>
               {%endif%}
             {% endif %}  
@@ -136,7 +139,7 @@ layout: default
         </tbody>
         <tfoot>
           <tr>
-            <td colspan="3" class="table-lightish">Total Points:</td>
+            <td colspan="4" class="table-lightish">Total Points:</td>
             <td class="table-lightish">{{total_points}}</td>
           </tr>
         </tfoot>
