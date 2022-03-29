@@ -1,13 +1,13 @@
 ---
-layout: course
+layout: course-notoc
 ---
 
-<h2 id="overview">Overview</h2> 
+<h2 id="overview">Overview</h2>
 
 <p>
     All of your Lab work will be submitted through Github Classroom. You are responsible for
     ensuring all your code is properly pushed to Github! Any code not pushed to Github by the
-    deadline will not be accepted under any circumstances. If you don't already have a 
+    deadline will not be accepted under any circumstances. If you don't already have a
     <a href="https://github.com">GitHub</a> account you will need to create one.
 </p>
 
@@ -21,7 +21,7 @@ layout: course
         address from the list. If you don’t select your student email address your instructor will not be
         able to grade your code. If you can’t find your email in the list, contact your instructor ASAP to
         get the issue resolved.
-    </li> 
+    </li>
     <li>
         Make sure and save the github URL so you can find your assignment later if needed!
     </li>
@@ -47,10 +47,6 @@ layout: course
     <li>
         The assignment specifications will be located in the README.md in the starter code.
     </li>
-    <li>
-        The README.md will have a link to the grading rubric that you can use to verify you have
-        completed all requirements.
-    </li>
 </ul>
 
 <h2 id="push-your-finished-code-to-github">Step 4 - Push your finished code to Github</h2>
@@ -63,9 +59,33 @@ layout: course
     </li>
     <li>
         After the due date and late submission deadline have passed your instructor will grade
-        whatever code you have committed and pushed to your repository. 
+        whatever code you have committed and pushed to your repository.
     </li>
 </ul>
 
 {% include youtube.html param="https://www.youtube.com/embed/ersuzAUtTsY" %}
 
+<h2 id="points">Grading</h2>
+
+<p>
+    This lab is worth {{page.points}} points. The due date is listed on the <a
+    href="{{site.url}}#homework">course homepage.</a> Your grade will be calculated with the
+    formula: <strong>Math.floor(%tests_passed * {{page.points}}) = Total Points</strong>. For
+    example, if you passed 80% of the test suite your grade would be
+    <strong>.8 * {{page.points}} = {{0.8 | times: page.points | floor }}.</strong>
+</p>
+
+<ul>
+    <li>
+        If you program fails to compile it will be awarded 0 points. Absolutely no partial credit
+        will be given if your program does not compile.
+    </li>
+    <li>
+        Your code will be graded on the command line using the operating system and tools specified. Your instructor
+        will not use an IDE to build your lab.
+    </li>
+    <li>
+        Do not modify files that say <strong>DO NOT MODIFY</strong>. If you do you will be awarded 0
+        points!
+    </li>
+</ul>

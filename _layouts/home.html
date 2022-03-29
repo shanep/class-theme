@@ -50,7 +50,7 @@ layout: default
     {% endif%}
     
     <div >
-      <h2 id="Homework">Weekly Homework</h2>
+      <h2 id="homework">Weekly Homework</h2>
       <table style="margin:auto;height: 100%; width: 100%;">
         <thead>
           <tr>
@@ -78,14 +78,20 @@ layout: default
                 </tr>
                 {% assign curr_module = page.tag %}
               {% endif%}
-    
+              {% if page.layout == "reading-zybooks" %}
+                {% assign page_title = site.data.semester-info.reading[page.slug] %}         
+              {% else%}
+                {% assign page_title = page.title %}
+              {% endif %}
+                
+              
     
               {% if curr_week == tableFile.break %}
                 <!--Add in the break week, we need to grab the next lesson before inserting new week-->
                 <tr>
                   {% assign curr_date = curr_date | date: "%s" | plus: two_days %}
                   <td>{{curr_date | date: "%m/%d - %a"}}</td>
-                  <td><a href="{{site.url}}{{page.url}}">{{page.title}} ({{page.slug}})</a>{%if page.layout == "lab"%} 🧪 {%elsif page.layout == "project" %} 📡 {% endif%}</td>
+                  <td><a href="{{site.url}}{{page.url}}">{{page_title}} ({{page.slug}})</a>{%if page.layout == "lab"%} 🧪 {%elsif page.layout == "project" %} 📡 {% endif%}</td>
                   <td>{{page.points}}</td>
                   {% assign total_points = total_points | plus: page.points %}
                 </tr>
@@ -120,7 +126,7 @@ layout: default
                 {% endif %}
                 {% assign curr_date = curr_date | date: "%s" | plus: two_days %}
                 <td>{{curr_date | date: "%m/%d - %a"}}</td>
-                <td><a href="{{site.url}}{{page.url}}">{{page.title}} ({{page.slug}})</a>{%if page.layout == "lab"%} 🧪 {%elsif page.layout == "project" %} 📡 {% endif%}</td>
+                <td><a href="{{site.url}}{{page.url}}">{{page_title}} ({{page.slug}})</a>{%if page.layout == "lab"%} 🧪 {%elsif page.layout == "project" %} 📡 {% endif%}</td>
                 <td>{{page.points}}</td>
                 {% assign total_points = total_points | plus: page.points %}
               </tr>

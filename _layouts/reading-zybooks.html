@@ -1,23 +1,45 @@
 ---
-layout: course-notoc
+layout: default
 ---
 
-{% include youtube.html param="https://www.youtube.com/embed/dQw4w9WgXcQ" %}
 
-<p>
-    For this homework you will need to log into the textbook with the link below and complete the
-    assigned challenge and participation questions.  There is nothing you need to explicitly turn in
-    all your progress is saved automatically by the textbook.
-</p>
+{% include course-sidebar.html %}
 
-<p>
-    Your grade will be calculated with the formula: <strong>%complete * 20 = grade</strong>. For
-    example, if you completed 80% of the assigned challenge and participation questions your grade 
-    would be <strong>.8 * 20 = 16.</strong>
-</p>
+<div id="main-content" class="post-content">
+    <article>
+        <h1>{{site.data.semester-info.reading[page.slug]}}</h1>
 
-<ul>
-    <li><a href="{{site.data.semester-info.textbook}}?selectedPanel=assignments-panel">{{site.data.semester-info.reading[page.slug]}}</a></li>
-    <li><a href="https://zybooks.zendesk.com/hc/en-us/articles/360007538033-What-are-assignments-how-do-I-get-credit-for-them-and-how-do-I-submit-them-">Zybooks Help</a></li>
-</ul>
+        <h2 id="overview">Overview</h2>
 
+        <p>
+            For this homework you will need to log into zyBooks with the link below and complete the
+            assigned challenge and participation questions. There is nothing you need to submit for
+            this homework all your progress is saved automatically by the textbook. Only work done
+            before the due date (and <a href="{{site.url}}#late-work-policy">late work policy</a>)
+            will be counted towards your grade. 
+        </p>
+
+        <ul>
+            <li>
+                <a
+                    href="{{site.data.semester-info.textbook}}?selectedPanel=assignments-panel">{{site.data.semester-info.reading[page.slug]}}</a>
+            </li>
+            <li>
+                <a
+                    href="https://zybooks.zendesk.com/hc/en-us/articles/360007538033-What-are-assignments-how-do-I-get-credit-for-them-and-how-do-I-submit-them-">Zybooks
+                    Help</a>
+            </li>
+        </ul>
+
+        <h2 id="points">Grading</h2>
+        <p>
+            This reading assignment is worth {{page.points}} points. The due date is listed on the <a
+            href="{{site.url}}#homework">course homepage.</a> Your grade will be calculated with the
+            formula: <strong>Math.floor(%complete * {{page.points}}) = Total Points</strong>. For example, if you completed 80% of
+            the assigned challenge and participation questions your grade would be <strong>.8 * {{page.points}} =
+            {{0.8 | times: page.points | floor }}.</strong>
+        </p>
+
+    </article>
+    {% include footer.html %}
+</div>
