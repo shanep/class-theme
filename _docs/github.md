@@ -1,9 +1,9 @@
 ---
 title: Github
-layout: course-notoc
+layout: course
 ---
 
-## Cloning your using VSCode
+## Clone using VSCode
 
 - Once you have accepted your assignment you can launch VSCode to clone the starter code to your
   local machine.
@@ -12,7 +12,7 @@ layout: course-notoc
 {% include youtube.html param="https://www.youtube.com/embed/fiPsHGi3Z_s" %}
 
 
-## Submitting your assignment for grading
+## Submitting
 
 - After you have completed the assignment you need to add, commit, and push your code to Github so
   it can be graded. Any code that is not pushed by the due date will not be graded.

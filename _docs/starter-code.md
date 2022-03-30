@@ -1,6 +1,7 @@
 ---
 title: Starter Code Place Holder
-layout: course-notoc
+layout: course
+hide: true
 date: 2022-01-20
 ---
 

@@ -2,7 +2,7 @@
 title: "Course Introduction"
 date: 2022-01-10
 tag: introduction
-layout: course-notoc
+layout: course
 points: 5
 ---
 
