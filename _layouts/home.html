@@ -17,6 +17,8 @@ layout: default
     <p>
         {{tableFile.welcome-message}}
     </p>
+
+
     
     <h2 id="logistics">Logistics</h2>
     
@@ -32,6 +34,10 @@ layout: default
       <li><a href="{{tableFile.office-hours}}">Office Hours</a></li>
       <li><a href="{{tableFile.learning-objectives}}">Learning Objective Alignment Sheet</a></li>
     </ul>
+
+    <h3 id="catalog-description">Catalog description</h3>
+
+    {{tableFile.catalog}}
     
     {% assign one_day = 1 | times: 24 | times: 60 | times: 60 %}
     {% assign two_days = 2 | times: 24 | times: 60 | times: 60 %}
