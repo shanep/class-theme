@@ -4,10 +4,10 @@ date: 2022-01-10
 tag: introduction
 layout: course
 points: 5
+video: https://www.youtube.com/embed/dQw4w9WgXcQ
 ---
 
 ## Overview
 
-{% include youtube.html param="https://www.youtube.com/embed/dQw4w9WgXcQ" %}
 
 Introduce your course!

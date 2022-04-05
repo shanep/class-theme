@@ -43,6 +43,10 @@ layout: default
             <h1>{%if page.title %}{{page.title}}{%else%}{{site.title}} - {{site.description}} [{{site.data.semester-info.semester}}]{% endif%}</h1>
         {% endif %}
         <p><span class="med-text">{{page.slug}}</span></p>
+        {% if page.video %}
+        <h2>Lesson Video</h2>
+            {% include youtube.html param=page.video %}
+        {% endif %}
         {{content}}
     </article>
     {% include footer.html %}
