@@ -42,10 +42,17 @@ layout: default
         {% else%}
             <h1>{%if page.title %}{{page.title}}{%else%}{{site.title}} - {{site.description}} [{{site.data.semester-info.semester}}]{% endif%}</h1>
         {% endif %}
-        <p><span class="med-text">{{page.slug}}</span></p>
         {% if page.video %}
-        <h2>Lesson Video</h2>
-            {% include youtube.html param=page.video %}
+        <h2>{{page.slug | truncate: 6, "" | capitalize }} {{page.slug | remove_first: "lesson"}} Video</h2>
+        <div style="text-align: center;">
+            <iframe width="560" height="315"
+                    src=https://www.youtube.com/embed/{{page.video}}
+                    title="YouTubevideo player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            
+            </iframe>
+            </div>
         {% endif %}
         {{content}}
     </article>

@@ -1,4 +1,4 @@
-break: 2
+break: 3
 start-date: 2022-08-21T12:00:00Z
 start-day: wednesday
 semester: Fall 2022
@@ -36,8 +36,8 @@ coursework:
   Final Exam: 100
 
 labs:
-   lesson02: /docs/starter-code.html
-   lesson04: /docs/starter-code.html
+   lesson02: https://example.com
+   lesson04: https://example.com
    lesson06: /docs/starter-code.html
    lesson08: /docs/starter-code.html
    lesson10: /docs/starter-code.html
