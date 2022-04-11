@@ -54,7 +54,7 @@ layout: default
             </iframe>
             </div>
         {% endif %}
-        {{content}}
+        {% include anchor_headings.html html=content anchorBody="#" %}
     </article>
     {% include footer.html %}
 </div>
