@@ -9,10 +9,11 @@ layout: course
 <p>This is a multistage project consisting of the following lessons:</p>
 
 <ul>
-{% for lesson in page.lessons %}
-<li><a href="{{lesson}}.html">{{lesson}}</a></li>
+{% for lesson in site.lessons %}
+{% if lesson.tag == page.tag %}
+<li><a href={{lesson.url}}>{{lesson.title}}</a></li>
+{% endif %}
 {% endfor %}
-<li><a href="{{page.lessons[0]}}.html">Starter Code</a></li>
 </ul>
 
 <p>
