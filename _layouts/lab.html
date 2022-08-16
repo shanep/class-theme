@@ -32,27 +32,3 @@ layout: course
 </ul>
 
 {% include youtube.html param="https://www.youtube.com/embed/U1vCFZmtYUA" %}
-
-<h2 id="points">Grading</h2>
-
-<p>
-    This lab is worth {{page.points}} points. The due date is listed on the <a
-    href="{{site.url}}#homework">course homepage.</a> Your grade will be calculated with the
-    formula: <strong>Math.floor(%tests_passed * {{page.points}}) = Total Points</strong>. For
-    example, if you passed 80% of the test suite your grade would be
-    <strong>.8 * {{page.points}} = {{0.8 | times: page.points | floor }}.</strong>
-</p>
-
-<ul>
-    <li>
-        If you program fails to compile it will be awarded 0 points. Absolutely no partial credit
-        will be given if your program does not compile.
-    </li>
-    <li>
-        Your code will be graded on the command line using the operating system and tools specified. Your instructor
-        will not use an IDE to build your lab.
-    </li>
-    <li>
-        Do not modify files that say <strong>DO NOT MODIFY</strong>.
-    </li>
-</ul>
