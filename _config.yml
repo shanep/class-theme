@@ -16,10 +16,9 @@ exclude:
   - README.md
   - LICENSE
 
+# Add in new classes here and they will show up on the main index
 collections:
-  lessons:
-    output: true
-  docs:
+  web:
     output: true
 
 defaults:

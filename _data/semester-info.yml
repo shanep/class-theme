@@ -1,64 +1,12 @@
-break: 3
-start-date: 2022-08-21T12:00:00Z
-start-day: wednesday
-semester: Fall 2022
-textbook: https://example.com
-discussion: https://piazza.com/
-github: https://github.com/some-site
-office-hours: https://example.com
-grades: https://example.com
-exams: https://example.com
-example-exams: https://example.com
-learning-objectives: https://example.com
-instructor: John Doe
-email: johndoe@boisestate.edu
-text-logo: //CS123
-catalog: >
-   CS123 Computer Science Stuff (3-0-3)(F,S). Catalog description. PREREQ: CS121.
-welcome-message: >
-   Welcome to the class! My name is Shane Panter and I will be your instructor for this course. For
-   many students this will be the first time you have been exposed to [REPLACE ME] of any kind.
-   This course has been designed to take someone who has never seen these concepts before to being
-   able to [REPLACE ME] in 16 weeks. This class is a three credit course and it is
-   specifically designed to require 8 to 10 hours of work each week. In order to succeed in the
-   course, it will be critical for you to manage your time effectively and keep up with the reading
-   and lab activities.  Please take some time to get familiar with the course website. Pay close
-   attention to when the homework assignments are due to ensure you get everything in on time.
-   <br><br> We will be interacting with each other primarily through github, discussion forums, and
-   videos. Get started by completing the course introduction homework below!
-welcome-video: https://www.youtube.com/embed/dQw4w9WgXcQ
+text-logo: //SKP
 
-coursework:
-  Labs (11 @ 50 points each): 550
-  Reading (10 @ 20 points each): 200
-  Midterm Exam: 100
-  Final Project: 100
-  Final Exam: 100
-
-labs:
-   lesson02: https://example.com
-   lesson04: https://example.com
-   lesson06: /docs/starter-code.html
-   lesson08: /docs/starter-code.html
-   lesson10: /docs/starter-code.html
-   lesson12: /docs/starter-code.html
-   lesson14: /docs/starter-code.html
-   lesson18: /docs/starter-code.html 
-   lesson20: /docs/starter-code.html 
-   lesson22: /docs/starter-code.html
-   lesson24: /docs/starter-code.html
-   lesson26: /docs/starter-code.html
-   lesson28: /docs/starter-code.html
-   lesson30: /docs/starter-code.html
-
-reading:
-  lesson03: Reading Homework (ch1)
-  lesson05: Reading Homework (ch2.1-2.4)
-  lesson07: Reading Homework (ch2.5-2.11)
-  lesson09: Reading Homework (ch3)
-  lesson11: Reading Homework (ch4)
-  lesson13: Reading Homework (ch5)
-  lesson17: Reading Homework (ch6.1-6.3)
-  lesson19: Reading Homework (ch6.4-6.6)
-  lesson21: Reading Homework (ch7.4-7.4)
-  lesson23: Reading Homework (ch7.5-7.9)
+web:
+   title: CS123 Computer Science Stuff
+   catalog: >
+      CS123 Computer Science Stuff (3-0-3)(F,S). Catalog description. PREREQ: CS121.
+   textbook: https://example.com
+   discussion: https://piazza.com/
+   github: https://github.com/some-site
+   office-hours: https://example.com
+   grades: https://example.com
+   learning-objectives: https://example.com

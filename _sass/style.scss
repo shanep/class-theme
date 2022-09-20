@@ -222,6 +222,18 @@ a.skip-main:focus, a.skip-main:active {
   border: thin solid;
 }
 
+#final-grades-table {
+  float: left;
+}
+
+#final-grades-p {
+  float:right;
+}
+
+#can-i-still-pass {
+  clear: both;
+}
+
 #course-toc-title{
   position: absolute;
   right: 1rem;
