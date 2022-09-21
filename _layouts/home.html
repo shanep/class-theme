@@ -1,5 +1,19 @@
 ---
 layout: default
 ---
+<div class="center-home">
+    <div class="home-page">
+        <h1>{{site.title}}</h1>
+        <ul>
+            {% for course in site.collections %}
+                {% if course.label != "posts" %}
+                    <li><a href="{{course.label}}">{{course.label}}</a></li> 
+                {% endif %}
+            
+            {% endfor %}
+        </ul>
+    </div>
+</div>
 
-{{content}}
+
+

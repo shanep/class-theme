@@ -1,12 +1,3 @@
 ---
 layout: home
-tag: home
 ---
-<ul>
-    {% for course in site.collections %}
-        {% if course.label != "posts" %}
-            <li><a href="{{course.label}}">{{course.label}}</a></li> 
-        {% endif %}
-    
-    {% endfor %}
-</ul>

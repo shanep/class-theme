@@ -25,11 +25,13 @@
   --line-height-small: calc(0.8*var(--ratio));
   --border-thin: var(--s-5);
   --border-thick: var(--s-2);
+  --fancy-gradient: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3);
   line-height: var(--ratio);
   font-size: calc(.333vw + 1em);
   font-family: var(--font-plain);
   background-color: var(--color-light);
   color: var(--color-dark);
+  
 }
 
 body{
@@ -78,9 +80,6 @@ blockquote {
   padding-left: 5px;
 }
 
-h2{
-  border-bottom: thin dashed var(--color-darkish );
-}
 
 img{
     max-width: 100%;
@@ -287,3 +286,47 @@ a.skip-main:focus, a.skip-main:active {
  .no-dec{
    text-decoration: none;
  }
+
+ article h1 {
+  border-radius: 5px;
+  background: var(--fancy-gradient);
+}
+
+.center-home{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.home-page ul {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+}
+
+.home-page ul li {
+  background: var(--fancy-gradient);
+  border-radius: 5px;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  font-size: 3em;
+  text-align: center;
+}
+
+.home-page ul li a {
+  text-decoration: none;
+  color: white;
+}
+
