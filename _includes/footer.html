@@ -1,11 +1,11 @@
 <footer class="footer">
-    <div class="contact">
+    <div class="page-info">
         <ul>
             <li>
                 {% if page.date %} {{page.date | date: "%Y-%m-%d"}}{% else %} {{"now" | date: "%Y-%m-%d" }} {% endif%} | layout: {{page.layout}}</li>
-            <li>contact: {{site.data.semester-info.email}}</li>
-            <li>theme: <a href="https://github.com/shanep/shanep-class">shanep-class</a></li>       
-            {% if page.tags %}
+            <li>contact: {{site.data.semester-info.contact}}</li>
+            <li>theme: <a href="https://github.com/shanep/shanep-class">shanep-class</a></li> 
+            {% if page.tags != empty %}
             <li>tags: 
                 {% for tag in page.tags %}
                     {{tag}}{% if forloop.last != true %},{% endif %}

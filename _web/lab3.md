@@ -1,9 +1,6 @@
 ---
-title:  Project part 1
-tag: project example
-layout: project
-lessons: [lesson03, lesson04]
-points: 100
+title:  Lab 3
+layout: lab
 ---
 
 Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC

@@ -1,16 +1,25 @@
 ---
-layout: course
+layout: default
 ---
 
 {% assign this_course = site.data.semester-info[page.collection] %}
 
-<img src={{"/assets/images/home_page.png"}} alt="Course Logo">
+{% include course-nav.html %}
 
-<div>
+<div class="post-content">
 
     <h2 id="catalog-description">Catalog Description</h2>
 
     {{this_course.catalog}}
+
+    {% if this_course.textbook %}
+    <h2 id="course-textbook">Course Textbook</h2>
+    <ul>
+        <li><a href="{{this_course.textbook.url}}">{{this_course.textbook.title}}</a></li>
+        <li>Author: {{this_course.textbook.author}}</li>
+    </ul>
+    
+    {% endif %}
 
     <section>
         <h2 id="grading-policy">Grading Policy</h2>
@@ -82,17 +91,6 @@ layout: course
 
 
     </section>
-
-    <h3 id="can-i-still-pass">Can I still pass?</h3>
-
-    <p>
-        The passing grade for courses in the Computer Science Department is 70%. So we can calculate the
-        absolute minimum number of points that you need to earn in this course as {{total_points |
-        times: 70 | divided_by: 100 | plus: 1}}. To know if you still can pass the course all you need
-        to do is take your current grade and then add in any points that you could still earn before the
-        end of the semester. If that number is below {{total_points | times: 70 | divided_by: 100 |
-        plus: 1}} then it is not mathematically possible for you to pass the class.
-    </p>
 
     <h3 id="incomplete">Incomplete</h3>
 
@@ -216,6 +214,15 @@ layout: course
         We will be using an online discussion board for this course. Rather than emailing questions to me, please post your
         questions on the discussion board and get replies from myself as well as your classmates! You can also post private
         messages to me. You are expected to log onto the board at least once a week and read all the posts.
+    </p>
+
+    <h2 id="github">Github</h2>
+
+    <p>
+        All of your Lab work will be submitted through Github. You are responsible for
+        ensuring all your code is properly pushed to Github! Any code not pushed to Github by the
+        deadline will not be accepted under any circumstances. If you don't already have a
+        <a href="https://github.com">GitHub</a> account you will need to create one.
     </p>
 
     <h2 id="attendance-policy">Attendance Policy</h2>

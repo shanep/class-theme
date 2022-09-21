@@ -1,8 +1,6 @@
 ---
-tag: reading
-layout: reading-zybooks
-points: 30
-video: dQw4w9WgXcQ
+title: Lab 5
+layout: lab
 ---
 
 ## Overview

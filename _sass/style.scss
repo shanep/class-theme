@@ -58,8 +58,6 @@ tbody tr {
     border-bottom: 1px solid var(--color-lightish);
 }
 
-
-
 .table-darkish{
     background-color: var(--color-darkish);
     color: var(--color-lightish);
@@ -133,22 +131,14 @@ a.skip-main:focus, a.skip-main:active {
 .content{
   display: flex;
   flex-wrap: wrap;
-}
-
-.content > * {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 30ch;
+  height: 100vh;
 }
 
 .post-nav {
   flex-basis: 10rem;
   flex-grow: 1;
-  position: relative;
   outline: thin var(--color-darkish) dashed;
-  padding-top: 10px;
-  padding-right: 1em;
-  padding: var(--s2);
+  padding: var(--s1);
   background-color: var(--color-lightish);
 }
 
@@ -156,9 +146,6 @@ a.skip-main:focus, a.skip-main:active {
   flex-basis: 0;
   flex-grow: 999;
   min-width: 50%;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 0;
   padding: var(--s2);
 }
 
@@ -178,27 +165,21 @@ a.skip-main:focus, a.skip-main:active {
   align-items:center;
 }
 
-.footer ul{
-  list-style-type: none;
-}
-
 .footer{
-  font-size: var(--s-1);
-  font: var(--font-special);
+  font-size: var(--s-2);
+  font-style: var(--font-special);
   border-top: thin black solid;
-  margin-top: 1em;
-  display: inline-block;
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
 }
 
-.contact,
-.copyright{
-  margin-top:2em;
-  margin-left:2em;
-  margin-right:2em;
-  padding: 0;
+.page-info{
+  white-space: nowrap;
 }
 
-.contact ul{
+.page-info ul{
+  list-style: none;
   padding: 0;
 }
 
@@ -222,16 +203,23 @@ a.skip-main:focus, a.skip-main:active {
   border: thin solid;
 }
 
-#final-grades-table {
-  float: left;
+.course-contents{
+  display: flex;
+  justify-content: space-evenly;
 }
 
-#final-grades-p {
-  float:right;
+.course-contents section ul{
+  list-style:none;
+  margin: auto;
+  padding: 5px;
 }
 
-#can-i-still-pass {
-  clear: both;
+.course-contents section ul li {
+  border-bottom: 1px;
+  border-bottom-style: dashed;
+}
+.course-contents section ul li a {
+  text-decoration: none;
 }
 
 #course-toc-title{

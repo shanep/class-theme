@@ -1,10 +1,14 @@
 text-logo: //SKP
+contact: shanepanter@boisestate.edu
 
 web:
    title: CS123 Computer Science Stuff
    catalog: >
       CS123 Computer Science Stuff (3-0-3)(F,S). Catalog description. PREREQ: CS121.
-   textbook: https://example.com
+   textbook: 
+      url: https://example.com
+      title: Really cool textbook
+      author: John Doe
    discussion: https://piazza.com/
    github: https://github.com/some-site
    office-hours: https://example.com

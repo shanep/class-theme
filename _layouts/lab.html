@@ -1,34 +1,32 @@
 ---
-layout: course
+layout: default
 ---
 
-{{content}}
+{% include course-nav.html %}
 
-<h2 id="github-classroom">Github Classroom</h2>
+<div class="post-content">
+    <article>
+        {% include toc.html html=content %}
+        <ul>
+            <h2 id="accept-the-assignment">Task 0 - Accept the assignment</h2>
+            <li>Get the <a href="{{site.data.semester-info.labs[page.slug]}}">Starter Code</a></li>
+            <li>When you accept the assignment if you can't find your email in the list,
+            contact your instructor ASAP to get the issue resolved.
+            </li>
+            <li>
+                Once you accept the assignment it should show up in the class 
+                <a href="{{site.data.semester-info.github}}">GitHub account</a>
+            </li>
+        </ul>
+        <h2 id="Toc">Contents</h2>
 
-<p>
-    All of your Lab work will be submitted through Github Classroom. You are responsible for
-    ensuring all your code is properly pushed to Github! Any code not pushed to Github by the
-    deadline will not be accepted under any circumstances. If you don't already have a
-    <a href="https://github.com">GitHub</a> account you will need to create one.
-</p>
+        {{content}}
+    </article>
+    {% include footer.html %}
+</div>
 
-<h3 id="accept-the-assignment">Accept the assignment</h3>
 
-<ul>
-    <li>Get the <a href="{{site.data.semester-info.labs[page.slug]}}">Starter Code</a></li>
-    <li>When you accept the assignment it is critical that you select your student email
-        address from the list. If you don't select your student email address your instructor will not be
-        able to grade your code. If you can't find your email in the list, contact your instructor ASAP to
-        get the issue resolved.
-    </li>
-    <li>
-        Make sure to save the GitHub URL so you can find your assignment later if needed!
-    </li>
-    <li>
-        Once you accept the assignment it should show up in the class 
-        <a href="{{site.data.semester-info.github}}">GitHub account</a>
-    </li>
-</ul>
 
-{% include youtube.html param="https://www.youtube.com/embed/U1vCFZmtYUA" %}
+
+
+
