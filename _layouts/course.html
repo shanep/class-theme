@@ -4,34 +4,33 @@ layout: default
 
 {% assign this_course = site.data.semester-info[page.collection] %}
 
-{% include course-nav.html %}
+
+<div class="post-nav">
+    <div class="logo">
+        <h1>
+          <a href="{{site.url}}">{{site.data.semester-info.text-logo}}</a>
+        </h1>
+    </div>
+    <h2 id="logistics">Course Links</h2>    
+    <ul>      
+        <li><a href="/{{page.collection}}">Course Home</a></li>
+        <li><a href="{{this_course.discussion}}">Discussion Forum</a></li>
+        <li><a href="{{this_course.github}}">Github Course Site</a></li>
+        <li><a href="{{this_course.learning-objectives}}">Learning Objectives</a></li>
+    
+    </ul>
+  
+    {% if page.slug != "index"%}
+    <h2>Contents</h2>
+    {% include toc.html html=content %}
+    {% endif %}
+</div>
 
 <div class="post-content">
+
     <article>
-        <h1>{{this_course.title}}</h1>
-        <img src={{"/assets/images/home_page.png"}} alt="Course Logo">
-        <div class="course-contents">    
-            <section class="course-labs">  
-                <h2>Labs</h2>
-                <ul>
-                {% for pg in site[page.collection] %}
-                    {% if pg.layout == "lab" %}
-                        <li><a href="{{pg.url}}">{{pg.title}}</a></li>
-                    {% endif %}
-                {% endfor %}
-                </ul>
-            </section> 
-            <section class="course-docs">  
-                <h2>Docs</h2>
-                <ul>
-                {% for pg in site[page.collection] %}
-                    {% if pg.layout == "doc" %}
-                        <li><a href="{{pg.url}}">{{pg.title}}</a></li>
-                    {% endif %}
-                {% endfor %}
-                </ul>
-            </section>
-        </div>
+        <h1>{{page.title}}</h1>
+        {{content}}
     </article>
     {% include footer.html %}
 </div>

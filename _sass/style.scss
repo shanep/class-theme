@@ -131,15 +131,13 @@ a.skip-main:focus, a.skip-main:active {
 .content{
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
+
 }
 
 .post-nav {
   flex-basis: 10rem;
   flex-grow: 1;
-  outline: thin var(--color-darkish) dashed;
   padding: var(--s1);
-  background-color: var(--color-lightish);
 }
 
 .post-content {

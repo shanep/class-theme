@@ -1,3 +1,3 @@
 ---
-layout: course
+layout: course-home
 ---
